@@ -1,0 +1,12 @@
+name: PrisonMinesExpansion
+version: '${project.version}'
+main: com.github.gavvydizzle.prisonminesexpansion.PrisonMinesExpansion
+api-version: 1.18
+depend: [ PrisonMines, ServerUtils, WorldEdit ]
+authors: [ GavvyDizzle ]
+description: Custom PrisonMines addons
+commands:
+  minesexpansion:
+    description: PrisonMinesExpansion admin commands
+    permission: prisonminesexpansion.mineadmin
+    permission-message: Insufficient permission

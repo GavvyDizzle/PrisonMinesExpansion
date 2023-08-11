@@ -1,0 +1,439 @@
+list:
+  '1':
+    mineID: a
+    percentChancePerReset: 12.5
+    contents:
+      common:
+        weight: 60
+        replaceBlockChance: 0.055
+        blocks:
+          - COAL_ORE:3.5
+          - IRON_ORE:2.0
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:2AC754>Common Lucky Mine in Mine A
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.5% Coal Ore'
+          - '&7- &e2.0% Iron Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 60%'
+      rare:
+        weight: 46
+        replaceBlockChance: 0.07
+        blocks:
+          - IRON_ORE:3
+          - COPPER_ORE:2
+          - REDSTONE_ORE:2
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:189CFB>Rare Lucky Mine in Mine A
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Iron Ore'
+          - '&7- &e2.0% Copper Ore'
+          - '&7- &e2.0% Redstone Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 26%'
+      epic:
+        weight: 10
+        replaceBlockChance: 0.045
+        blocks:
+          - GOLD_ORE:3
+          - COAL_BLOCK:1.5
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:BC2EDF>Epic Lucky Mine in Mine A
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Gold Ore'
+          - '&7- &e1.5% Coal Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 10%'
+      legendary:
+        weight: 4
+        replaceBlockChance: 0.04
+        blocks:
+          - GOLD_ORE:3
+          - DIAMOND_ORE:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:FCC200>Legendary Lucky Mine in Mine A
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Gold Ore'
+          - '&7- &e1.0% Diamond Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 4%'
+  '2':
+    mineID: b
+    percentChancePerReset: 12.5
+    contents:
+      common:
+        weight: 60
+        replaceBlockChance: 0.06
+        blocks:
+          - IRON_ORE:3.0
+          - LAPIS_ORE:3.0
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:2AC754>Common Lucky Mine in Mine B
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Iron Ore'
+          - '&7- &e3.0% Lapis Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 60%'
+      rare:
+        weight: 46
+        replaceBlockChance: 0.1
+        blocks:
+          - IRON_ORE:4
+          - COPPER_ORE:3
+          - GOLD_ORE:3
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:189CFB>Rare Lucky Mine in Mine B
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e4.0% Iron Ore'
+          - '&7- &e3.0% Copper Ore'
+          - '&7- &e3.0% Gold Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 26%'
+      epic:
+        weight: 10
+        replaceBlockChance: 0.065
+        blocks:
+          - GOLD_ORE:4
+          - LAPIS_BLOCK:1.5
+          - DIAMOND_ORE:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:BC2EDF>Epic Lucky Mine in Mine B
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e4.0% Gold Ore'
+          - '&7- &e1.5% Lapis Block'
+          - '&7- &e1.0% Diamond Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 10%'
+      legendary:
+        weight: 4
+        replaceBlockChance: 0.06
+        blocks:
+          - LAPIS_BLOCK:3
+          - DIAMOND_ORE:2
+          - GOLD_BLOCK:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:FCC200>Legendary Lucky Mine in Mine B
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Lapis Block'
+          - '&7- &e2.0% Diamond Ore'
+          - '&7- &e1.0% Gold Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 4%'
+  '3':
+    mineID: c
+    percentChancePerReset: 12.5
+    contents:
+      common:
+        weight: 60
+        replaceBlockChance: 0.08
+        blocks:
+          - DEEPSLATE_COPPER_ORE:5
+          - DEEPSLATE_GOLD_ORE:3
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:2AC754>Common Lucky Mine in Mine C
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e5.0% Deepslate Copper Ore'
+          - '&7- &e3.0% Deepslate Gold Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 60%'
+      rare:
+        weight: 46
+        replaceBlockChance: 0.099
+        blocks:
+          - DEEPSLATE_IRON_ORE:4
+          - DEEPSLATE_GOLD_ORE:4
+          - COPPER_BLOCK:1.5
+          - DEEPSLATE_DIAMOND_ORE:0.4
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:189CFB>Rare Lucky Mine in Mine C
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e4.0% Deepslate Iron Ore'
+          - '&7- &e4.0% Deepslate Gold Ore'
+          - '&7- &e1.5% Copper Block'
+          - '&7- &e0.4% Deepslate Diamond Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 26%'
+      epic:
+        weight: 10
+        replaceBlockChance: 0.06
+        blocks:
+          - COPPER_BLOCK:3
+          - GOLD_BLOCK:2
+          - DEEPSLATE_DIAMOND_ORE:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:BC2EDF>Epic Lucky Mine in Mine C
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Copper Block'
+          - '&7- &e2.0% Gold Block'
+          - '&7- &e1.0% Deepslate Diamond Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 10%'
+      legendary:
+        weight: 4
+        replaceBlockChance: 0.035
+        blocks:
+          - DEEPSLATE_DIAMOND_ORE:3
+          - DIAMOND_BLOCK:0.5
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:FCC200>Legendary Lucky Mine in Mine C
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Deepslate Diamond Ore'
+          - '&7- &e0.5% Diamond Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 4%'
+  '4':
+    mineID: d
+    percentChancePerReset: 12.5
+    contents:
+      common:
+        weight: 60
+        replaceBlockChance: 0.075
+        blocks:
+          - GOLD_ORE:5.0
+          - RAW_IRON_BLOCK:2.5
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:2AC754>Common Lucky Mine in Mine D
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e5.0% Gold Ore'
+          - '&7- &e2.5% Raw Iron Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 60%'
+      rare:
+        weight: 46
+        replaceBlockChance: 0.11
+        blocks:
+          - COAL_BLOCK:4
+          - RAW_IRON_BLOCK:4
+          - IRON_BLOCK:3
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:189CFB>Rare Lucky Mine in Mine D
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e4.0% Coal Block'
+          - '&7- &e4.0% Raw Iron Block'
+          - '&7- &e3.0% Iron Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 26%'
+      epic:
+        weight: 10
+        replaceBlockChance: 0.07
+        blocks:
+          - DIAMOND_ORE:3
+          - GOLD_BLOCK:3
+          - EMERALD_ORE:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:BC2EDF>Epic Lucky Mine in Mine D
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Diamond Ore'
+          - '&7- &e3.0% Gold Block'
+          - '&7- &e1.0% Emerald Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 10%'
+      legendary:
+        weight: 4
+        replaceBlockChance: 0.04
+        blocks:
+          - EMERALD_ORE:3
+          - DIAMOND_BLOCK:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:FCC200>Legendary Lucky Mine in Mine D
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Emerald Ore'
+          - '&7- &e1.0% Diamond Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 4%'
+  '5':
+    mineID: e
+    percentChancePerReset: 12.5
+    contents:
+      common:
+        weight: 60
+        replaceBlockChance: 0.09
+        blocks:
+          - COPPER_BLOCK:4.0
+          - REDSTONE_BLOCK:3.0
+          - DEEPSLATE_DIAMOND_ORE:2.0
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:2AC754>Common Lucky Mine in Mine E
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e4.0% Copper Block'
+          - '&7- &e3.0% Redstone Block'
+          - '&7- &e2.0% Deepslate Diamond Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 60%'
+      rare:
+        weight: 46
+        replaceBlockChance: 0.06
+        blocks:
+          - DEEPSLATE_DIAMOND_ORE:4.0
+          - DEEPSLATE_EMERALD_ORE:2.0
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:189CFB>Rare Lucky Mine in Mine E
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e4.0% Deepslate Diamond Ore'
+          - '&7- &e2.0% Deepslate Emerald Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 26%'
+      epic:
+        weight: 10
+        replaceBlockChance: 0.17
+        blocks:
+          - COPPER_BLOCK:6.0
+          - REDSTONE_BLOCK:5.0
+          - DEEPSLATE_DIAMOND_ORE:4.0
+          - DEEPSLATE_EMERALD_ORE:2.0
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:BC2EDF>Epic Lucky Mine in Mine E
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e6.0% Copper Block'
+          - '&7- &e5.0% Redstone Block'
+          - '&7- &e4.0% Deepslate Diamond Ore'
+          - '&7- &e2.0% Deepslate Emerald Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 10%'
+      legendary:
+        weight: 4
+        replaceBlockChance: 0.025
+        blocks:
+          - DIAMOND_BLOCK:2
+          - EMERALD_BLOCK:0.5
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:FCC200>Legendary Lucky Mine in Mine E
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e2.0% Diamond Block'
+          - '&7- &e0.5% Emerald Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 4%'
+  '6':
+    mineID: f
+    percentChancePerReset: 12.5
+    contents:
+      common:
+        weight: 60
+        replaceBlockChance: 0.18
+        blocks:
+          - AMETHYST_BLOCK:12
+          - DEEPSLATE_DIAMOND_ORE:4
+          - DEEPSLATE_EMERALD_ORE:2
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:2AC754>Common Lucky Mine in Mine F
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e12.0% Amethyst Block'
+          - '&7- &e4.0% Deepslate Diamond Ore'
+          - '&7- &e2.0% Deepslate Emerald Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 60%'
+      rare:
+        weight: 46
+        replaceBlockChance: 0.275
+        blocks:
+          - AMETHYST_BLOCK:20
+          - DEEPSLATE_DIAMOND_ORE:5
+          - DEEPSLATE_EMERALD_ORE:2
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:189CFB>Rare Lucky Mine in Mine F
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e20.0% Amethyst Block'
+          - '&7- &e5.0% Deepslate Diamond Ore'
+          - '&7- &e2.5% Deepslate Emerald Ore'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 26%'
+      epic:
+        weight: 10
+        replaceBlockChance: 0.12
+        blocks:
+          - DEEPSLATE_DIAMOND_ORE:7
+          - DEEPSLATE_EMERALD_ORE:3.5
+          - DIAMOND_BLOCK:1.5
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:BC2EDF>Epic Lucky Mine in Mine F
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e7.0% Deepslate Diamond Ore'
+          - '&7- &e3.5% Deepslate Emerald Ore'
+          - '&7- &e1.5% Diamond Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 10%'
+      legendary:
+        weight: 4
+        replaceBlockChance: 0.04
+        blocks:
+          - DIAMOND_BLOCK:3
+          - EMERALD_BLOCK:1
+        messages:
+          - <SOLID:EAE790>&lMines &8❙ <SOLID:FCC200>Legendary Lucky Mine in Mine F
+          - <SOLID:F9E076>➥ Hover here for information
+        hoverMessage:
+          - '<SOLID:999DA0>Added Contents:'
+          - '&7- &e3.0% Diamond Block'
+          - '&7- &e1.0% Emerald Block'
+          - ''
+          - '&2Spawn Chance: 12.5%'
+          - '&aRarity Chance: 4%'
