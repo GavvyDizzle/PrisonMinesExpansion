@@ -22,15 +22,16 @@ import java.util.*;
 public class LuckyMine {
 
     private final LuckyMineManager luckyMineManager;
-    private final double percentChance;
+    private final double percentChance, percentRemainingThreshold;
     private final List<Pair<Integer, LuckyContents>> chances;
     private final Map<String, LuckyContents> contentsMap;
     private int totalWeight;
     private boolean ignored;
 
-    public LuckyMine(LuckyMineManager luckyMineManager, double percentChance) {
+    public LuckyMine(LuckyMineManager luckyMineManager, double percentChance, double percentRemainingThreshold) {
         this.luckyMineManager = luckyMineManager;
         this.percentChance = percentChance;
+        this.percentRemainingThreshold = percentRemainingThreshold;
         chances = new ArrayList<>();
         contentsMap = new HashMap<>();
         totalWeight = 0;
@@ -156,6 +157,10 @@ public class LuckyMine {
 
     public void setIgnored(boolean ignored) {
         this.ignored = ignored;
+    }
+
+    public double getPercentRemainingThreshold() {
+        return percentRemainingThreshold;
     }
 
     public Collection<String> getContentIDs() {

@@ -6,6 +6,7 @@ import com.github.gavvydizzle.prisonmines.events.MinesReloadedEvent;
 import com.github.gavvydizzle.prisonmines.mines.Mine;
 import com.github.gavvydizzle.prisonminesexpansion.PrisonMinesExpansion;
 import com.github.mittenmc.serverutils.Colors;
+import com.github.mittenmc.serverutils.Numbers;
 import com.github.mittenmc.serverutils.Pair;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
@@ -32,9 +33,6 @@ public class LuckyMineManager implements Listener {
     private final PrisonMinesAPI prisonMinesAPI;
     private final Map<String, LuckyMine> luckyMineMap;
 
-    private boolean isResetCheckerEnabled;
-    private double percentRemainingThreshold;
-
     public LuckyMineManager(PrisonMinesExpansion instance, PrisonMinesAPI prisonMinesAPI) {
         this.instance = instance;
         this.prisonMinesAPI = prisonMinesAPI;
@@ -47,12 +45,7 @@ public class LuckyMineManager implements Listener {
         FileConfiguration config = PrisonMinesExpansion.getConfigManager().get("luckyMine");
         if (config == null) return;
 
-        config.addDefault("constraints.enabled", true);
-        config.addDefault("constraints.percentRemainingThreshold", 99.99);
         config.addDefault("list", new HashMap<>());
-
-        isResetCheckerEnabled = config.getBoolean("constraints.enabled");
-        percentRemainingThreshold = config.getDouble("constraints.percentRemainingThreshold");
 
         luckyMineMap.clear();
 
@@ -80,7 +73,10 @@ public class LuckyMineManager implements Listener {
                     continue;
                 }
 
-                LuckyMine luckyMine = new LuckyMine(this, percentChancePerReset);
+                // No error checking, just clamp this amount between 0 and 100
+                double percentRemainingThreshold = Numbers.constrain(config.getDouble(path + ".percentRemainingThreshold"), 0, 100);
+
+                LuckyMine luckyMine = new LuckyMine(this, percentChancePerReset, percentRemainingThreshold);
 
                 if (config.getConfigurationSection(path + ".contents") == null) {
                     instance.getLogger().warning("No contents section exists for lucky mine at " + path + ". It will not be loaded");
@@ -203,7 +199,7 @@ public class LuckyMineManager implements Listener {
 
         // If the mine has not had enough blocks broken to initiate a lucky mine attempt
         // If the mine is ignored, then this check is skipped because a lucky mine is being forced to start
-        if (!luckyMine.isIgnored() && isResetCheckerEnabled && e.getPercentRemaining() > percentRemainingThreshold) return;
+        if (!luckyMine.isIgnored() && e.getPercentRemaining() > luckyMine.getPercentRemainingThreshold()) return;
 
         // Randomly start a lucky mine
         if (luckyMine.shouldActivate()) luckyMine.handleActivation(e.getMine());
